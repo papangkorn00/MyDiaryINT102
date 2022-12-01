@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(31, 31, 29);
+}
+
+
+/*NavBar Start*/
+
+
+nav{
+    width: auto;
+    height: 90px;
+    background-color: #d3ae7f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav h1{
+    font-family: 'Caveat', cursive;
+    color: rgb(61, 44, 25);
+    text-transform: uppercase;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f1d7b4;
+    background-color:rgb(61, 44, 25);
+    margin: 15px 10px;
+    padding: 5px 9px 5px 6px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: rgb(61, 44, 25);
+    background-color: #f1d7b4;
+}
+
+.btn{
+    font-weight: bolder;
+    padding: 15px;
+}
+
+
+/*NavBar End*/
+/*Contents Start*/
+
+.date{
+    margin: 1em 1em 0 2em;
+    float: right;
+    font-family: 'Didact Gothic', sans-serif;
+    color: rgb(202, 191, 178);
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item1{
+    display: block;
+    box-sizing: border-box;
+    width: 300px;
+    margin: -10em 0em 0em 7em;
+}
+
+.item2{
+    margin: -10em 7em 2em 20em;
+    background: rgba(241, 215, 180,0.7);
+    padding: 8em 5em 8em 5em ;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+p{
+    color: rgb(61, 44, 25);
+    font-weight: bolder;
+    font-family: 'Mali', cursive;
+    font-size: large;
+}
+
+img{
+    width: 506px;
+    height: 672px;
+    border-radius: 50px;
+    display: block;
+}
+
+
+/*Contents End*/
+/*Animate Start*/
+
+
+@keyframes PicDiary{
+    0% {
+        top: 10px;
+        transform:  scale(1) translate(-250%, 0%);
+    }
+    100% {
+    }
+}
+
+#picDiary{
+    animation: PicDiary 1.5s  normal none;
+}
+
+
+@keyframes NavBar{
+    0% {
+        font-size: 1em;
+        transform:  scale(1) translate(90% ,0%);
+    }
+    70% {
+    }
+}
+
+#nav-animate{
+    animation: NavBar 1s  normal none;
+}
+
+@keyframes Head{
+    0% {
+        transform:  scale(1.1) translate(5%, 5%);
+    }
+    100% {
+    }
+}
+
+#head:hover{
+    animation: Head 1s ease-in-out 0.1s normal none;
+}
+
+@keyframes Date{
+    0% {
+        font-size: 1em;
+        transform:  scale(1) translate(50% ,0%);
+    }
+    100% {
+    }
+}
+
+#date{
+    animation: Date 2s  normal none;
+}
+
+@keyframes Info{
+    0% {
+        font-size: 1em;
+        transform:  scale(1) translate(250% ,0%);
+    }
+    100% {
+    }
+}
+
+#info{
+    animation: Info 1s  normal none;
+}
+
+
+
+
+/*Animate End*/

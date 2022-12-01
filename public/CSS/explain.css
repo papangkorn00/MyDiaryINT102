@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: rgb(31, 31, 29);
+}
+
+nav{
+    width: auto;
+    height: 90px;
+    background-color: #d3ae7f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: sticky;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f1d7b4;
+    background-color:rgb(61, 44, 25);
+    margin: 15px 10px;
+    padding: 5px 9px 5px 6px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: rgb(61, 44, 25);
+    background-color: #f1d7b4;
+}
+
+
+.header{
+    margin-top: 1.5em;
+    margin-left: 1em;
+    font-family: 'Didact Gothic', sans-serif;
+    color: rgb(92, 66, 37);
+}
+
+nav h1{
+    font-family: 'Caveat', cursive;
+    color: rgb(61, 44, 25);
+    text-transform: uppercase;
+}
+
+/*Content start*/
+
+
+div.explain-newcss{
+    padding: 3rem;
+    background-color: rgba(241, 215, 180,0.7);
+    margin: 3rem;
+    border-radius: 20px;
+    font-family: 'Mali', cursive;
+    color: rgb(61, 44, 25);
+}
+
+.explain-newcss h1,h2{
+    padding-bottom: 1rem;
+}
+
+hr{
+    border: solid wheat;
+}
+
+div.animation-css{
+    font-size: large;
+    padding: 1rem 2rem;
+}
+
+.animation-css p{
+    padding-bottom: 1rem;
+}
+
+.animation-css ul{
+    padding-bottom: 1rem;
+}
+
+div.transform-css{
+    font-size: large;
+    padding: 1rem 2rem;
+}
+
+.transform-css p{
+    padding-bottom:1rem ;
+}
+
+.transform-css ul{
+    padding-bottom: 1rem;
+}
+
+div.transition-css{
+    font-size: large;
+    padding: 1rem 2rem;
+}
+
+.transition-css p{
+    padding-bottom:1rem ;
+}
+
+.transition-css ul{
+    padding-bottom: 1rem;
+}
+
+/*Content end*/
+/*animation start*/
+
+@keyframes NavBar{
+    0% {
+        font-size: 1em;
+        transform:  scale(1) translate(90% ,0%);
+    }
+    100% {
+    }
+}
+
+#nav-animate{
+    animation: NavBar 1s normal none;
+}
+
+@keyframes Head{
+    0% {
+        transform:  scale(1) translate(5%, 5%);
+    }
+    100% {
+    }
+}
+
+#head:hover{
+    animation: Head 1.1s ease-in-out 0.1s normal none;
+}
+
+/*Animation end*/

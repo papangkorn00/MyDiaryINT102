@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explain</title>
+    <link rel="icon" href="../IMAGES/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/explain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav-animate">
+        <a href="../index.html">
+            <h1 id="head">My Diary</h1>
+        </a>
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+        </ul>
+    </nav>
+
+    <div class="explain-newcss">
+        <div class="animation-css">
+            <h1>CSS:Animation</h1>
+            <p>เป็นการทำให้ element ที่เลือกเกิดการเคลื่อนไหวหรือเปลี่ยนแปลงไปตามที่ได้กำหนดไว้ หลักการทำงานของ CSS3
+                Animations ก็คือ 1. สร้าง Animation name และ 2. Add Keyframe ซึ่งเมื่อเราสร้าง Animation name แล้ว
+                เราสามารถที่จะเพิ่มคำสั่งให้ animation ที่เราสร้างขึ้นมานั้น ทำงานในรูปแบบต่างๆ ด้วยคำสั่งที่เราต้องการ
+            </p>
+            <h2>คำสั่งพื้นฐานของ Animation ใน CSS</h2>
+            <ul>
+                <li>animation-name คือ การตั้งชื่อให้กับรูปแบบการแสดงการเคลื่อนไหว</li>
+                <li>animation-duration คือ ระยะเวลาของการเคลื่อนไหว จาก ต้นทาง ไป ปลายทาง</li>
+                <li>animation-timing-function คือ รูปแบบการเล่นใน 1 รอบของการเคลื่อนไหวของ keyframe</li>
+                <li>animation-iteration-count คือ การทำซ้ำ เช่น จะให้ทำกี่รอบ หรือ infinite คือวนไม่หยุด</li>
+                <li>animation-direction คือ การสั่งทิศทางการเล่น เช่น จาก 1 ถึง 10 หรือจะให้เล่นถอยหลัง จาก 10 มา 1</li>
+                <li>animation-delay คือ จะให้เริ่มทำทันที หรือ ดีเลย์ ตามเวลาที่กำหนด เช่น ถ้าเรากดปุ่มแล้วต้องการให้
+                    animation ที่เราสั่งงานเริ่มเล่นเมื่อเวลาผ่านไปหลังจากกดปุ่ม 2 วินาที เราสามารถกำหนดได้ใน
+                    animation-delay โดยค่าเริ่มต้นคือ 0 ซึ่งเป็นการสั่งให้เล่นทันที</li>
+                <li>animation คือ shorthand property หรือการเขียนแบบย่อ โดยการใส่ค่าควรเรียงลำดับจาก animation-name ||
+                    animation-duration || animation-timing-function || animation-delay || animation-iteration-count ||
+                    animation-direction</li>
+            </ul>
+            <h2>Example</h2>
+            <div>
+                <img src="../IMAGES/animation code .png" alt="code-animation">
+            </div>
+        </div>
+        <hr>
+        <div class="transform-css">
+            <h1>CSS:Transform</h1>
+            <p>transform คือ การที่จะใส่เอฟเฟ็กต่างๆให้แก่ element โดยมีวิธีดังนี้</p>
+            <h2>คำสั่งพื้นฐานของ Transform ใน CSS</h2>
+            <ul>
+                <li>translate() - การย้าย element ไปตำแหน่งที่กำหนด</li>
+                <li>rotate() - การหมุน element</li>
+                <li>scale() - การย่อขยาย element</li>
+                <li>skewX() - ทำให้เอียงในแนวนอน</li>
+                <li>skewY() - ทำให้เอียงในแนวตั้ง</li>
+                <li>matrix() - เป็นการรวม transform ทั้งหมดยกเว้น rotate เข้าด้วยกันในบรรทัดเดียว โดยเขียนได้ดังนี้
+                    matrix( scaleX() ,skewY() ,skewX() ,scaleY() ,translateX() ,translateY())</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="transition-css">
+            <h1>CSS:Transition</h1>
+            <p>transition เป็นสิ่งที่ช่วยให้การเปลี่ยนค่าต่างๆ ของ element เป็นไปอย่างราบรื่น</p>
+            <h2>คำสั่งพื้นฐานของ Transition ใน CSS</h2>
+            <ul>
+                <li>transition-property - กำหนด property ที่ต้องการใช้ transition</li>
+                <li>transition-duration - กำหนดระยะเวลาในการ transition</li>
+                <li>transition-timing-function - กำหนดรูปแบบการเร่งความเร็วของ transition</li>
+                <li>transition-delay - กำหนดความล่าช้าของ transition</li>
+                <li>transition - กำหนด transition รวมกันเป็นบรรทัดเดียว โดยใส่ค่าตามนี้ property duration
+                    timing-function delay โดย timing-function และ delay ไม่จำเป็นต้องกำหนดก็ได้</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(31, 31, 29);
+}
+
+/*NavBar start*/
+nav{
+    width: auto;
+    height: 90px;
+    background-color: #d3ae7f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f1d7b4;
+    background-color:rgb(61, 44, 25);
+    margin: 15px 10px;
+    padding: 5px 9px 5px 6px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Caveat', cursive;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: rgb(61, 44, 25);
+    background-color: #f1d7b4;
+}
+
+nav h1{
+    font-family: 'Caveat', cursive;
+    color: rgb(61, 44, 25);
+    text-transform: uppercase;
+}
+/*NavBar end*/
+
+.header{
+    margin-top: 1.5em;
+    margin-left: 1em;
+    font-family: 'Didact Gothic', sans-serif;
+    color: rgb(202, 191, 178);
+}
+
+
+/*Contents start*/
+div.grid-container{
+    margin: 5em;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.grid-item1,.grid-item2,.grid-item3,.grid-item4,.grid-item5,.grid-item6{
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.grid-item6{
+    background: url(../IMAGES/GIFdiary1.gif) no-repeat center;
+    background-size: cover;
+}
+
+.grid-item5{
+    background: url(../IMAGES/GIFdiary2.gif) no-repeat center;
+    background-size: cover;
+}
+
+.grid-item4{
+    background:url(../IMAGES/GIFdiary3.gif) no-repeat center;
+    background-size: cover;
+}
+
+.grid-item3{
+    background:url(../IMAGES/GIFdiary4.gif) no-repeat center;
+    background-size: cover;
+}
+
+.grid-item2{
+    background:url(../IMAGES/GIFdiary5.gif);
+    background-size: cover;
+}
+
+.grid-item1{
+    background:url(../IMAGES/GIFdiary6.gif) ;
+    background-size: cover;
+}
+
+
+h1.head{
+    text-align: center;
+    margin-top: 40px;
+    color: #f1d7b4;
+    text-shadow: 3px 3px rgb(61, 44, 25)  ;
+    font-style: italic;
+}
+
+div p{
+    padding: 20px;
+}
+
+div a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color:#d3ae7f;
+    background-color: rgb(61, 44, 25);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    float: right;
+    margin-top:20px;
+}
+
+div a:hover{
+    background-color: #d3ae7f;
+    color:rgb(61, 44, 25) ;
+}
+
+/*Contents end*/
+
+
+
+/*Animate start*/
+@keyframes date{
+    0% {
+        font-size: 1em;
+        transform:  scale(1.1) translate(-15% ,0%);
+    }
+    70% {
+    }
+}
+
+#date{
+    animation: date 1.3s  normal none;
+}
+
+
+@keyframes NavBar{
+    0% {
+        font-size: 1em;
+        transform:  scale(1) translate(90% ,0%);
+    }
+    70% {
+    }
+}
+
+#nav-animate{
+    animation: NavBar 1s normal none;
+}
+
+@keyframes Head{
+    0% {
+        transform:  scale(1) translate(5%, 5%);
+    }
+    100% {
+    }
+}
+
+#head:hover{
+    animation: Head 1.1s ease-in-out 0.1s normal none;
+}
+
+@keyframes Content{
+    0% {
+        font-size: 1em;
+        transform:  scale(1.1) translate(0% ,50%);
+    }
+    100% {
+    }
+}
+
+#content{
+    animation: Content 1.3s ease-in 0s 1 normal none;
+}
+
+#contentBox{
+    transform-origin: center top;
+    transition-property: transform;
+    transition-duration: 0.7s;
+}
+
+#contentBox:hover{
+    transform: scale(1.1,1.1);
+}
+/*Animate end*/
+
+
+
+/*Media responsive start*/
+    @media screen and (max-width:700px){
+        .grid-container{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+/*Media responsive end*/
+
+
